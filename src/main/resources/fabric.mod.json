@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "status_changer",
+    "version": "${version}",
+
+    "name": "Status Changer",
+    "description": "Changes the server's MOTD and icon at a fixed rate",
+    "authors": [
+        "Psyvern"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/Psyvern/StatusChanger"
+    },
+
+    "license": "MIT",
+    "icon": "assets/status_changer/icon.png",
+
+    "environment": "server",
+    "entrypoints": {
+        "server": [
+            "com.psyvern.status_changer.StatusChanger"
+        ]
+    },
+    "mixins": [
+    ],
+
+    "depends": {
+        "fabricloader": ">=0.14.8",
+        "fabric": "*",
+        "minecraft": "~1.19",
+        "java": ">=17"
+    },
+    "suggests": {
+    }
+}
