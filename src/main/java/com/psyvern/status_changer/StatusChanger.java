@@ -46,8 +46,8 @@ public class StatusChanger implements DedicatedServerModInitializer {
 
 				var metadata = server.getServerMetadata();
 
-				metadata.setDescription(Text.of(status.motd().isEmpty() ? server.getServerMotd() : status.motd()));
-				metadata.setFavicon(status.encodeIcon(server));
+				metadata.description();
+				metadata.favicon();
 
 			} catch (Exception e) {
 
